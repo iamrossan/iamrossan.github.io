@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Roshan</title>
+    <meta name="author" content="Roshan Adhikari">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav><!--navigation bar-->
+      <label class="logo">RoshanAdhikari</label>
+      <ul>
+        <li><a  href="home.html">HOME</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="research.html">RESEARCH</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+      </ul>
+      </nav>
+      <div class="box"><!--box for form-->
+        <h2>Contact Me</h2>
+        <form name="messageForm" onsubmit="validateForm()"> <!--form-->
+          <div>
+            <input type="text" name="name" >
+            <label>Name</label> 
+          </div>
+          <div>
+            <input type="Email" name="email" >
+            <label>Email</label> 
+          </div>
+          <div>
+            <input type="text" name="subject">
+            <label>Subject</label> 
+          </div>
+          <div>
+            <textarea></textarea>
+            <label>Message</label>
+            </div>
+            <input type="Submit" name="message" value="send">
+        </form>
+      </div>
+      <script src="js/validation.js"></script><!--Script for validation-->
+      <div id="full"> <!--background image-->
+        <div>
+          <img src="img/contact.jpg" alt="roshan">
+      </div>
+      </div>
+      <div class="footer"><!--footer-->
+        <p>Roshan Adhikari @ Copyright 2020</p>
+      </div>
+     </body>
+     </html>
+      

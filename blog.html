@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>Roshan</title>
+      <meta name="author" content="Roshan Adhikari">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    p{
+      text-align: justify;
+    }
+    .transbox img{
+      width: 40%;
+      height: 40vh;
+      padding-left: 420px;
+      padding-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav> <!--navigation bar-->
+    <label class="logo">RoshanAdhikari</label>
+    <ul>
+      <li><a  href="home.html">HOME</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a class="active" href="blog.html">BLOG</a></li>
+      <li><a href="research.html">RESEARCH</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    </nav>
+    <div class="transbox"><!--transparent box-->
+      <h3 style="text-align: center;">Impact Of Technology</h3>
+      <img src="img/technology.jpeg"> <!--image of technology-->
+      
+      <p>Technology is a frame of knowledge given to create tools, processing action and the extracting materials. People use technology as products and process to 
+        simplify the work in their daily life. Technology is also known as an application to solve the problems. Now a days, Technology plays very important roles in 
+        everyday life as it helps to improve the living standard as well as to develop a certain person career and also the whole nation. It is very useful in business
+        a days it helps to make profit of the company and to make it a successful company.
+        In the same way it plays important roles in terms of communications as well as it helps to asset people with disabilities and enjoy their life like 
+            ordinary person. All of these things are the good impact of technology on everyday life.
+          In another hand, technology also have negative impacts in everyday life. <span id="remainingText">Using a lot of electronic gadgets may cause neck pain, eyes problems and many 
+            other physicals problems. Depending a lot in technology is making people lazy to do their work which directly cause physical problems. They using 
+            knowledge of technology to destroy someone’s life. In this way technology affects everyday life in both good as well as in negative way.</span></p>
+            <button onclick="changeText();" id="btn">Show more</button>
+    </div>
+    <!--js for show more/less option-->
+    <script>
+      function changeText(){
+          var moreText = document.getElementById("remainingText");
+          var btn = document.getElementById("btn");
+          
+          if(moreText.style.display == "none"){
+              moreText.style.display = "inline";
+              btn.innerHTML = "Show Less."
+          }
+          
+          else{
+              moreText.style.display = "none";
+              btn.innerHTML = "Show More."
+          }
+      }
+  
+  </script>
+    <div id="full"><!--background image-->
+      <div>
+        <img src="img/tech.jpg" alt="roshan">
+    </div>
+    </div>
+    <div class="footer"><!--footer-->
+      <p>Roshan Adhikari @ Copyright 2020</p>
+    </div>
+    </body>
+    </html>
